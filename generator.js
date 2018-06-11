@@ -14,7 +14,7 @@ const greet = () => {
 const intro = () => {
   const comp = nab(['company', 'employer', 'startup'])
   const namePt1 = nab([
-    'Box', 'Waste', 'Garbage', 'Xyz', 'Deep', 'Atom'
+    'Box', 'Waste', 'Garbage', 'Xyz', 'Deep', 'Atom', 'Square'
   ])
   const namePt2 = nab([
     '.ai', 'Cube', 'Box', 'able'
@@ -30,12 +30,16 @@ const intro = () => {
     'Enron',
     'Juicero',
     'Theranos',
-    'Zenefits'
+    'Zenefits',
+    'Pets.com',
+    'Lehman Brothers'
   ])
   const amt = nab([
     '$10M in our series A',
     '$1M in our seed round',
     'millions',
+    '50 gold doubloons',
+    '103 DogeCoin',
     '$50M in our series C',
     '$600k on KickStarter',
     '660 $100 Amazon gift cards'
@@ -45,7 +49,8 @@ const intro = () => {
     'day spas',
     'meditation retreats',
     'EDM festivals',
-    'brunch'
+    'brunch',
+    'maritime piracy'
   ])
   const impact = nab([
     'to change the world of',
@@ -69,6 +74,7 @@ const flatter = () => {
     'MS Paint',
     'Notepad',
     'SEO',
+    'beatmaking',
     'jQuery',
     'data mining',
     'A/B testing'
@@ -82,7 +88,7 @@ const flatter = () => {
     'user research'
   ])
   const role = nab([
-    'Head of Operations',
+    'Head of East Coast Operations',
     'VP of Growth Science',
     'Head of Unicorn Husbandry',
     'Head of APAC Growth',
