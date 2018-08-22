@@ -2,21 +2,30 @@
 <html>
   <head>
     <title>LinkedIn Message Generator</title>
+    <meta name="viewport" content="width=device-width" />
     <style>
-
     * {
-            margin: 10px;
-            padding: 0;
-            border: 0;
-            outline: 0;
-            font-size: 100%;
-            vertical-align: baseline;
-            background: transparent;
-            font-family: Arial, Sans-Serif;
-        }
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        font-family: Arial, Sans-Serif;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+    body {
+        height: 100%;
+        background-color: #f5f5f5
+    }
+
+    head {
+        display: none;
+    }
 
     input {
-      font-size: 13px;
+      width: 90%;
       background-color: white;
       border: 2px solid lightgrey;
       padding: 10px;
@@ -31,57 +40,144 @@
     }
 
     #stuff {
-	font-family: Garamond, "Times New Roman", serif;
-	font-size: 20px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 20px;
-	padding-left: 10%;
-	padding-right: 50%;
-	text-align: left;
-	white-space: pre-line;
-	max-width: 500px;
+        display: none;
+        background: white;
+        min-height: 250px;
+        border: gray solid 1px;
+        padding: 10px;
+        border-radius: 3px;
+        margin: 1em;
+    	white-space: pre-line;
+    	max-width: 500px;
+	font-size: 1em;
     }
 
+    #header {
+        flex-flow: column;
+        color: white;
+        font-size: 2em;
+        background-color: #283e4a;
+        display: inline-flex;
+        width: 100%;
+        padding: 4%;
+    }
+
+    #ido {
+        margin-left: 16px;
+        font-size: 55%;
+    }
+
+    /* unvisited link */
+    a:link {
+        color: #0077B5;
+    }
+    
+    /* visited link */
+    a:visited {
+        color: #0077B5;
+    }
+    
+    /* mouse over link */
+    a:hover {
+        color: hotpink;
+    }
+    
     h1 {
       display: block;
-      font-size: 2em;
-      margin-top: 0.67em;
-      margin-bottom: 0.67em;
-      margin-left: 0;
-      margin-right: 0;
+      margin-top: 0px;
       font-weight: bold;
     }
 
     #bank {
-	padding-left: 10%;
-	padding-right: 50%;
+        display: grid;
+        grid-template:
+		"aside aside" 33%
+		"lab lab" 40px
+		"firstname btn" 40px / 50% 50%;
+        grid-gap: 10px;
+        max-width: 500px;
+        margin: 2%;
+    }
+
+    #aside {
+        grid-area: aside;
+        text-align: start;
+        white-space: pre-wrap;
+    }
+
+    #floatymcfloatface {
+        margin: 10px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    label {
+        grid-area: lab;
+    }
+
+    #firstnamediv {
+        grid-area: firstname;
+    }
+
+    #in {
+        background: #0077B5;
+        padding-left: 3px;
+        padding-right: 3px;
+        width: 25px;
+        height: 25px;
+        font-size: 90%;
+        margin-left: 1.5px;
+        color: white;
+        border: #0077B5 solid 1px;
+        border-radius: 2px;
+    }
+
+    #title {
+        font-weight: 300;
+        font-family: "Helvetica", sans-serif;
+        margin-left: 10px;
+        font-size: 200%;
+    }
+
+    button {
+        grid-area: btn;
+        text-overflow: clip;
+        background: #0077B5;
+        border: none;
+        cursor: pointer;
     }
 
 
-     @media only screen and (max-width: 600px) {
-         #stuff {
-             padding: 0
-         }
-	 #bank {
-             padding: 0
-	 }
-     }
-
+    ul {
+        list-style: none;
+    }
+    
     </style>
   </head>
   <body>
     <script type="text/javascript" src="./generator.js"></script>
     <script type="text/javascript" src="./name.js"></script>
 
+    <div id='header'>
+      <h1>Linked<span id='in'>in</span></h1><span id='title'>Message Generator</span>
+      <span id='ido'>by <a href='https://duberste.in'>duber</a></span>
+    </div>
+    <div id='floatymcfloatface'>
     <div id='bank'> 
-      <h1> LinkedIn Message Generator </h1>
-      <label>What's your first name? </label>
-      <input type="text" id='firstname' name="firstname">
-    <button onClick="trigger()"> Generate message </button>
+      <div id='aside'>
+A generator for tech industry recruiter messages.
+Occasionally gets your name wrong, like a real recruiter.
+Not actually by LinkedIn, definitely parody, and cage-free.
+      </div>
+      <label>Enter the first name of the person you'd like to recruit.</label> <br/>
+      <div id='firstnamediv'>
+        <input type="text" id='firstname' name="firstname">
+      </div>
+      <br/>
+      <button onClick="trigger()"> Generate message </button>
     </div>
     <div id='stuff'></div>
+    </div>
     <script>
 
          var input = document.getElementById('firstname');
@@ -94,6 +190,8 @@
 	  let name = document.getElementById('firstname').value
           name = getYourNameMaybe(name)
           embedMsg(name, 'stuff')
+
+          document.getElementById('stuff').style.display = "block";
         }
         document.body.addEventListener( 'keyup', function (e) {
           if ( e.keyCode == 13 ) {
