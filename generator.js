@@ -35,7 +35,7 @@ const intro = () => {
     'Lehman Brothers'
   ])
   const amt = nab([
-    '$10M in our series A',
+    '$10M in our series F',
     '$1M in our seed round',
     'millions',
     '50 gold doubloons',
@@ -49,12 +49,13 @@ const intro = () => {
     'day spas',
     'meditation retreats',
     'EDM festivals',
-    'brunch',
+    'hangover cures',
     'maritime piracy'
   ])
   const impact = nab([
     'to change the world of',
     'to design the future of',
+    'to re-design the boundaries of',
     'to push the limits of'
   ])
   return `My ${comp} ${namePt1 + namePt2}, a ${adj} ${co}, has just raised ${amt} ` +
