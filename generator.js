@@ -24,6 +24,8 @@ const intro = () => {
     'deep learning-powered',
     'de-centralized',
     'scalable',
+    'AI-infused',
+    'brain computer interface-focused',
     'sharing economy-inspired'
   ])
   const co = nab([
@@ -32,6 +34,7 @@ const intro = () => {
     'Theranos',
     'Zenefits',
     'Pets.com',
+    'Circuit City',
     'Lehman Brothers'
   ])
   const amt = nab([
@@ -39,6 +42,7 @@ const intro = () => {
     '$1M in our seed round',
     'millions',
     '50 gold doubloons',
+    '75 Silver-Sickles',
     '103 DogeCoin',
     '$50M in our series C',
     '$600k on KickStarter',
@@ -50,7 +54,10 @@ const intro = () => {
     'meditation retreats',
     'EDM festivals',
     'hangover cures',
-    'maritime piracy'
+    'maritime piracy',
+    'down jackets',
+    'dark green leafy vegetables',
+    'succulent gardens'
   ])
   const impact = nab([
     'to change the world of',
