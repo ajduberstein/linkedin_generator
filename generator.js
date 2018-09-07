@@ -25,7 +25,6 @@ const intro = () => {
     'de-centralized',
     'scalable',
     'AI-infused',
-    'brain computer interface-focused',
     'sharing economy-inspired'
   ])
   const co = nab([
@@ -56,7 +55,7 @@ const intro = () => {
     'hangover cures',
     'maritime piracy',
     'down jackets',
-    'dark green leafy vegetables',
+    'microgreens',
     'succulent gardens'
   ])
   const impact = nab([
