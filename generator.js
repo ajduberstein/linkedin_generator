@@ -33,7 +33,6 @@ const intro = () => {
     'Theranos',
     'Zenefits',
     'Pets.com',
-    'Circuit City',
     'Lehman Brothers'
   ])
   const amt = nab([
@@ -41,7 +40,6 @@ const intro = () => {
     '$1M in our seed round',
     'millions',
     '50 gold doubloons',
-    '75 Silver-Sickles',
     '103 DogeCoin',
     '$50M in our series C',
     '$600k on KickStarter',
@@ -55,7 +53,6 @@ const intro = () => {
     'hangover cures',
     'maritime piracy',
     'down jackets',
-    'microgreens',
     'succulent gardens'
   ])
   const impact = nab([
