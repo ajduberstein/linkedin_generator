@@ -33,6 +33,7 @@ const intro = () => {
     'Theranos',
     'Zenefits',
     'Pets.com',
+    'Farmville',
     'Lehman Brothers'
   ])
   const amt = nab([
@@ -48,6 +49,12 @@ const intro = () => {
   const change = nab([
     'smart watches',
     'day spas',
+    'downloadable haircuts',
+    'real-time glacier monitoring',
+    'smart lawns',
+    'paintball-related litigation'
+    'cold air balloons',
+    'fish transportation',
     'meditation retreats',
     'EDM festivals',
     'hangover cures',
@@ -59,7 +66,8 @@ const intro = () => {
     'to change the world of',
     'to design the future of',
     'to re-design the boundaries of',
-    'to push the limits of'
+    'to push the limits of',
+    'to disrupt the status quo of'
   ])
   return `My ${comp} ${namePt1 + namePt2}, a ${adj} ${co}, has just raised ${amt} ` +
      `${impact} ${change}.`
@@ -96,7 +104,10 @@ const flatter = () => {
     'VP of Growth Science',
     'Head of Unicorn Husbandry',
     'Head of APAC Growth',
-    'In-House Tea Specialist'
+    'In-House Tea Specialist',
+    'VP of Sports Metaphors',
+    'Senior Reply-All Consultant',
+    'Director of Snacks'
   ])
   const suggest = nab([
     'let\'s discuss your potential future as our',
@@ -145,6 +156,8 @@ const clown = () => {
   const name = nab([
     'Todd',
     'Noah',
+    'Blake',
+    'Jill',
     'Drew',
     'Matt',
     'Brian'
