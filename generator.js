@@ -33,7 +33,6 @@ const intro = () => {
     'Theranos',
     'Zenefits',
     'Pets.com',
-    'Zombo.com',
     'Farmville',
     'Lehman Brothers'
   ])
@@ -45,17 +44,14 @@ const intro = () => {
     '103 DogeCoin',
     '$50M in our series C',
     '$600k on KickStarter',
-    '777 Spacebucks',
-    '431.0000009 Imperial Credits',
     '660 $100 Amazon gift cards'
   ])
   const change = nab([
     'smart watches',
     'day spas',
     'downloadable haircuts',
-    'realtime glacier monitoring',
+    'real-time glacier monitoring',
     'smart lawns',
-    'spittoons',
     'paintball-related litigation'
     'cold air balloons',
     'fish transportation',
