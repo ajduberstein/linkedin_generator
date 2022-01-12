@@ -52,7 +52,7 @@ const intro = () => {
     'downloadable haircuts',
     'real-time glacier monitoring',
     'smart lawns',
-    'paintball-related litigation'
+    'paintball-related litigation',
     'cold air balloons',
     'fish transportation',
     'meditation retreats',
